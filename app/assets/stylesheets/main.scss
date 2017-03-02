@@ -63,7 +63,7 @@ div.menu {
   left: 0;
   div.menu-item {
     padding: 5px;
-    text-align: center;
+    text-align: left;
     height: 36px;
     &:nth-of-type(3n) {
       background-color: $pink;
@@ -76,20 +76,25 @@ div.menu {
     }
     span {
       max-width: 0px;
-      float: right;
       transition: 1s linear;
       overflow: hidden;
-      display: inline;
-    @for $i from 1 through 4 {
-      div.box-#{$i}:hover {
+      float: right;
+    }
+  }
+  @for $i from 1 through 4 {
+    div.box-#{$i} {
+      float: left;
+      clear: both;
+      &:hover {
         span.span-#{$i} {
-          max-width: 150px;
+          width: 100px;
+          max-width: 200px;
+          display: initial;
         }
       }
     }
-    }
-    a {
-      color: $black;
-    }
+  }
+  a {
+    color: $black;
   }
 }
