@@ -7,7 +7,7 @@ gem "delayed_job_active_record"
 gem "flutie"
 gem "honeybadger"
 gem "jquery-rails"
-gem "normalize-rails", "~> 3.0.0"
+gem "normalize-rails"
 gem "pg"
 gem "puma"
 gem "rack-canonical-host"
@@ -22,6 +22,7 @@ gem "title"
 gem "clearance"
 gem "uglifier"
 gem "redcarpet"
+gem "font-awesome-sass"
 
 group :development do
   gem "listen"
@@ -61,6 +62,6 @@ group :staging, :production do
 end
 
 gem 'high_voltage'
-gem 'bourbon', '~> 5.0.0.beta.7'
-gem 'neat', '~> 2.0.0.beta.1'
+gem 'bourbon'
+gem 'neat'
 gem 'refills', group: [:development, :test]

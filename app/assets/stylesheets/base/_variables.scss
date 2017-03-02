@@ -3,7 +3,8 @@ $medium-screen: 600px;
 $large-screen: 900px;
 
 // Typography
-$base-font-family: $font-stack-system;
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900');
+$base-font-family: 'Source Sans Pro', sans-serif; 
 $heading-font-family: $base-font-family;
 
 // Font Sizes
@@ -20,17 +21,18 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue: #1565c0;
-$dark-gray: #333;
-$medium-gray: #999;
-$light-gray: #ddd;
+$black: #1C191A;
+$yellow: #F9F945;
+$blue: #47BDE0;
+$pink: #D90F92;
+$color-set: $pink, $blue, $yellow;
 
 // Font Colors
-$base-font-color: $dark-gray;
+$base-font-color: $black;
 $action-color: $blue;
 
 // Border
-$base-border-color: $light-gray;
+$base-border-color: $black;
 $base-border: 1px solid $base-border-color;
 
 // Background Colors

@@ -102,6 +102,8 @@ GEM
       railties (>= 3.0.0)
     ffi (1.9.17)
     flutie (2.0.0)
+    font-awesome-sass (4.7.0)
+      sass (>= 3.2)
     formulaic (0.4.0)
       activesupport
       capybara
@@ -139,7 +141,7 @@ GEM
     nio4r (2.0.0)
     nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
-    normalize-rails (3.0.3)
+    normalize-rails (4.1.1)
     pg (0.19.0)
     pry (0.10.4)
       coderay (~> 1.1.0)
@@ -279,7 +281,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   awesome_print
-  bourbon (~> 5.0.0.beta.7)
+  bourbon
   bullet
   bundler-audit (>= 0.5.0)
   capybara-webkit
@@ -289,14 +291,15 @@ DEPENDENCIES
   dotenv-rails
   factory_girl_rails
   flutie
+  font-awesome-sass
   formulaic
   high_voltage
   honeybadger
   jquery-rails
   launchy
   listen
-  neat (~> 2.0.0.beta.1)
-  normalize-rails (~> 3.0.0)
+  neat
+  normalize-rails
   pg
   pry-byebug
   pry-rails
