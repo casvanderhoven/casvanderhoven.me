@@ -1,8 +1,13 @@
 /* header */
 header {
-  @include grid-container;
   margin-bottom: 100px;
   height: 296px;
+  a {
+    color: $black;
+    &:hover {
+      color: $black;
+    }
+  }
   div.logo {
     @include grid-column(4);
     border-left: 50px solid $blue;
@@ -27,17 +32,39 @@ header {
     }
   }
   div.header-text {
-    @include grid-push(4);
-    @include grid-column(4);
     position: relative;
+    margin-right: 20px;
     height: 100%;
-    h1 {
+    h1.typed {
       position: absolute;
+      display: inline;
       bottom: 0;
       right: 0;
       margin-bottom: 0;
     }
   }
+}
+
+.typed-cursor{
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
 }
 
 /* project#index */

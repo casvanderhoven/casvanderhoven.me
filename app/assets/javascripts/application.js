@@ -12,5 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require typed
+//= require projects
 
 //= require_tree .

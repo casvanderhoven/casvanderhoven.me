@@ -255,6 +255,8 @@ GEM
     title (0.0.7)
       i18n
       rails (>= 3.1)
+    typedjs-rails (1.0.4)
+      railties (>= 3.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
     uglifier (3.1.2)
@@ -323,6 +325,7 @@ DEPENDENCIES
   suspenders
   timecop
   title
+  typedjs-rails
   uglifier
   web-console
   webmock
