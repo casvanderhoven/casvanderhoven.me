@@ -45,28 +45,6 @@ header {
   }
 }
 
-.typed-cursor{
-  opacity: 1;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite;
-}
-@keyframes blink{
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
-}
-@-webkit-keyframes blink{
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
-}
-@-moz-keyframes blink{
-  0% { opacity:1; }
-  50% { opacity:0; }
-  100% { opacity:1; }
-}
-
 /* project#index */
 div.project {
   @include grid-column(12);
@@ -105,7 +83,7 @@ div.menu {
     span {
       max-width: 0px;
       width: 0px;
-      transition: 1s ease-in-out;
+      transition: 0.3s ease-in-out;
       overflow: hidden;
       float: right;
       text-align: right;
@@ -129,4 +107,55 @@ div.menu {
   a {
     color: $black;
   }
+}
+
+/* articles#index and articles#show */
+div.article-programming {
+  border-top: 8px solid $blue;
+}
+div.article-personal {
+  border-top: 8px solid $yellow;
+}
+div.article-professional {
+  border-top: 8px solid $pink;
+}
+div.article-preview {
+  @include grid-column(12);
+  position: relative;
+  margin-bottom: 20px;
+  a {
+    color: $black;
+    &:hover {
+      color: lighten($black, 40%);
+    }
+  }
+  h2.date {
+    font-size: 1em;
+  }
+  h1.title {
+  }
+  span.category {
+    font-weight: 700;
+    padding: 5px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+  }
+  span.tag-programming {
+    background-color: $blue;
+  }
+  span.tag-personal {
+    background-color: $yellow;
+  }
+  span.tag-professional {
+    background-color: $pink;
+  }
+  p {
+    max-width: 50%;
+  }
+}
+
+/* articles#new/edit */
+div.article_creation {
+  @include grid-column (8);
 }

@@ -22,8 +22,10 @@
     </h2>
   </div>
   <div class="menu-item box-2">
+    <%= link_to articles_path do %>
     <h2><%= icon('book') %>
     <span class="span-2">blog</span>
+  <% end %>
     </h2>
   </div>
   <div class="menu-item box-3">
@@ -32,9 +34,11 @@
     </h2>
   </div>
   <div class="menu-item box-4">
-    <h2><%= link_to icon('sign-in'), sign_in_path %>
-    <span class="span-4">Log in</span>
-    </h2>
+    <%= link_to sign_in_path do %>
+      <h2><%= icon('sign-in') %>
+      <span class="span-4">Log in</span>
+      </h2>
+    <% end %>
   </div>
 </div>
 

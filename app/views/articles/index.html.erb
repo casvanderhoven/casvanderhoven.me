@@ -1,3 +1,33 @@
 <% provide(:title, "Articles | Cas van der Hoven") %>
+<% @articles.each do |article| %>
+  <div class="article-preview article-<%= article.category %>">
+  <h2 class="date"><%= article.created_at.strftime("%A, %B %e") %></h2>
+  <%= link_to article do %>
+  <h1 class="title"><%= article.title %></h1>
+<% end %>
+<span class="category tag-<%= article.category %>"><%= article.category %></span>
+</div>
+<% end %>
 
-<%= @articles %>
+<div class="menu">
+  <div class="menu-item box-1">
+    <%= link_to articles_path do %>
+      <h2><%= icon('book') %>
+      <span class="span-2">blog</span>
+    <% end %>
+  </div>
+  <div class="menu-item box-2">
+    <%= link_to new_article_path do %>
+      <h2><%= icon('pencil') %>
+      </h2>
+    <% end %>
+      </h2>
+  </div>
+  <div class="menu-item box-3">
+    <%= link_to sign_in_path do %>
+      <h2><%= icon('sign-in') %>
+      <span class="span-3">Log in</span>
+      </h2>
+    <% end %>
+  </div>
+</div>
