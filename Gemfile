@@ -23,7 +23,7 @@ gem "clearance"
 gem "uglifier"
 gem "redcarpet"
 gem "pygments.rb"
-gem "font-awesome-sass"
+gem "font-awesome-rails"
 
 group :development do
   gem "listen"

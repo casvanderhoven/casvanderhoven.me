@@ -9,13 +9,14 @@
   </div>
 <% end %>
 
-  <ul class="menu">
-    <li><h2><%= link_to "blog", articles_path %></h2></li>
-    <li><h2><%= icon('twitter') + ' ' + icon('github') + ' ' + icon('send')%></h2></li>
-    <% if !signed_in? %>
-      <li><h2><%= link_to "log in", sign_in_path %></h2></li>
-    <% else %>
-      <li><h2><%= link_to "new project", new_project_path %></h2></li>
-      <li><h2><%= link_to "log out", sign_out_path, method: :delete %></h2></li>
-    <% end %>
-  </ul>
+<ul class="menu">
+  <li><h2><%= link_to "resume", resume_path %></h2></li>
+  <li><h2><%= link_to "blog", articles_path %></h2></li>
+  <li><h2><%= link_to fa_icon('twitter'), "https://twitter.com/casvanderhoven" %><%= link_to fa_icon('github'), "https://github.com/casvanderhoven" %> <%= link_to fa_icon('send'), "mailto:casvanderhoven@gmail.com"%></h2></li>
+  <% if !signed_in? %>
+    <li><h2><%= link_to "log in", sign_in_path %></h2></li>
+  <% else %>
+    <li><h2><%= link_to "new project", new_project_path %></h2></li>
+    <li><h2><%= link_to "log out", sign_out_path, method: :delete %></h2></li>
+  <% end %>
+</ul>

@@ -1,0 +1,73 @@
+<ul class="menu">
+  <li><h2><%= link_to "back", root_path %></h2></li>
+  <li><h2><%= link_to fa_icon('twitter'), "https://twitter.com/casvanderhoven" %><%= link_to fa_icon('github'), "https://github.com/casvanderhoven" %> <%= link_to fa_icon('send'), "mailto:casvanderhoven@gmail.com"%></h2></li>
+</ul>
+<div class="header">
+<h1 class="name">Cas van der Hoven</h1>
+</div>
+<div class="column">
+  <h1>About me</h1>
+  <p>I like anything related to (sustainable) finance, software development, and web design. I’m educated in mathematics, economics, philosophy, busines administration, and finance, but I’m also self taught in various programming languages and principles.</p>
+
+  <h1>Experience</h1>
+  <h2>Research intern at Equileap Foundation</h2>
+  <ul>
+    <%= content_tag(:li, fa_icon("caret-right li", text: "Researched gender balance performance of public companies")) %>
+    <%= content_tag(:li, fa_icon("caret-right li", text: "Data entry and organisation")) %>
+    <%= content_tag(:li, fa_icon("caret-right li", text: "Key skills applied: data management, professional communication, research")) %>
+  </ul>
+  <h2>Tutor at Check5 Studiebegeleiding B.V.</h2>
+  <ul>
+    <%= content_tag(:li, fa_icon("caret-right li", text: "Tutored high school and university students in various subjects")) %>
+    <%= content_tag(:li, fa_icon("caret-right li", text: "Key skill applied: explaining complex problems in ways that are easy to understand")) %>
+  </ul>
+  <h2>Treasurer at UCMSA Universalis</h2>
+  <ul>
+    <%= content_tag(:li, fa_icon("caret-right li", text: "Managed budget of university study association of ~600 members")) %>
+    <%= content_tag(:li, fa_icon("caret-right li", text: "Acted as board member")) %>
+    <%= content_tag(:li, fa_icon("caret-right li", text: "Key skills applied: management, accounting, Excel, organising events")) %>
+  </ul>
+  <h1>Skills</h1>
+  <h2>Financial and Statistical</h2>
+  <p>Financial analysis, quantitative modelling, Excel, SPSS, Stata, MATLAB</p>
+  <h2>IT</h2>
+  <p>Programming, databases, HTML5, CSS3, JavaScript/jQuery, SQL, AJAX, Swift/Obj-C, Ruby, Ruby on Rails, limited knowledge of Python and PHP</p>
+  <h2>Editing</h2>
+  <p>Microsoft Office, Adobe Creative Suite (mainly InDesign and Photoshop)</p>
+  <h2>Languages</h2>
+  <p>Dutch (native), English (fluent), German (limited), French (limited), Italian (limited)</p>
+</div>
+<div class="column">
+  <h1>Education</h1>
+  <h2>MSc International Business, Maastricht University</h2>
+  <ul>
+    <%= content_tag(:li, fa_icon("caret-right li", text: "Sustainable Finance track")) %>
+    <%= content_tag(:li, fa_icon("caret-right li", text: "Academic focus: sustainable finance, imapct investment, microfinance")) %>
+    <%= content_tag(:li, fa_icon("caret-right li", text: "Thesis: The Environmental Performance of Microfinance Institutions")) %>
+  </ul>
+  <h2>BSc Liberal Arts and Sciences</h2>
+  <ul>
+    <%= content_tag(:li, fa_icon("caret-right li", text: "Honours degree")) %>
+    <%= content_tag(:li, fa_icon("caret-right li", text: "Academic focus")) %>
+    <%= content_tag(:li, fa_icon("caret-right li", text: "Thesis: Investing in Sustainable Microfinance")) %>
+  </ul>
+  <h2>Exchange programme, Nanyang Technological University</h2>
+  <ul>
+    <%= content_tag(:li, fa_icon("caret-right li", text: "Academic focus: econometrics, statistics, mathematics")) %>
+  </ul>
+  <h1>Projects</h1>
+  <h2>Bodhi</h2>
+  <ul>
+    <%= content_tag(:li, fa_icon("caret-right li", text: "Bodhi is an iOS app that helps people avoid buying unsustainable products")) %>
+    <%= content_tag(:li, fa_icon("caret-right li", text: "The app scans barcodes and presents sustainability information about the company behind the product")) %>
+  </ul>
+  <h2>Sofia</h2>
+  <ul>
+    <%= content_tag(:li, fa_icon("caret-right li", text: "Sofia is an interactive study guide for Latin and Ancient Greek texts")) %>
+  </ul>
+  <h2>Vegan for a Week</h2>
+  <ul>
+    <%= content_tag(:li, fa_icon("caret-right li", text: "Vegan for a Week is a web app that makes it easy for anyone to try out the vegan diet for one week")) %>
+    <%= content_tag(:li, fa_icon("caret-right li", text: "It provides recipes for three meals per day, grocery lists, and general information about veganism")) %>
+  </ul>
+
