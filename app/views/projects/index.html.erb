@@ -1,19 +1,13 @@
+<% @projects.each do |project| %>
 <div class="project">
-  <h1>Bodhi</h1>
-  <p>Consume responsibly with Bodhi</p>
+  <%= link_to project.link do %>
+    <h1><%= project.name %></h1>
+<% end %>
+<p><%= project.description %></p>
+<%= link_to "Delete project", project_path(project), method: :delete, class: "delete-link", data: { confirm: "Are you sure you want to delete this project?" } %>
+<img src="http://placehold.it/300x300">
 </div>
-<div class="project">
-  <h1>Bodhi</h1>
-  <p>Consume responsibly with Bodhi</p>
-</div>
-<div class="project">
-  <h1>Bodhi</h1>
-  <p>Consume responsibly with Bodhi</p>
-</div>
-<div class="project">
-  <h1>Bodhi</h1>
-  <p>Consume responsibly with Bodhi</p>
-</div>
+<% end %>
 
 <div class="menu">
   <div class="menu-item box-1">
@@ -37,6 +31,12 @@
     <%= link_to sign_in_path do %>
       <h2><%= icon('sign-in') %>
       <span class="span-4">Log in</span>
+      </h2>
+    <% end %>
+  </div>
+  <div class="menu-item box-4">
+    <%= link_to new_project_path do %>
+      <h2><%= icon('plus') %>
       </h2>
     <% end %>
   </div>

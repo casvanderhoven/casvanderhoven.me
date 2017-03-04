@@ -3,7 +3,7 @@
   <h2 class="date"><%= @article.created_at.strftime("%A, %B %e") %></h2>
   <h1 class="title"><%= @article.title %></h1>
   <span class="category tag-<%= @article.category %>"><%= @article.category %></span>
-  <p><%= @article.content %></p>
+  <p><%= markdown @article.content %></p>
 </div>
 
 <div class="menu">

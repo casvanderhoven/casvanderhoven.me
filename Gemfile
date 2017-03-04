@@ -22,6 +22,7 @@ gem "title"
 gem "clearance"
 gem "uglifier"
 gem "redcarpet"
+gem "pygments.rb"
 gem "font-awesome-sass"
 
 group :development do

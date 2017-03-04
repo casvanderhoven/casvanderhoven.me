@@ -61,6 +61,15 @@ div.project {
   h1 {
     font-size: 2em;
   }
+  a {
+    color: $black;
+  }
+  a.delete-link {
+    float: right;
+  }
+  img {
+    float: right;
+  }
 }
 
 div.menu {
@@ -133,6 +142,7 @@ div.article-preview {
     font-size: 1em;
   }
   h1.title {
+    font-size: 2em;
   }
   span.category {
     font-weight: 700;
@@ -155,7 +165,7 @@ div.article-preview {
   }
 }
 
-/* articles#new/edit */
-div.article_creation {
+/* new/edit form pages */
+div.creation {
   @include grid-column (8);
 }
