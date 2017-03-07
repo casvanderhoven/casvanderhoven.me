@@ -1,3 +1,4 @@
+<% provide(:title, "Cas van der Hoven") %>
 <% @projects.each do |project| %>
   <div class="project">
     <%= link_to project.link do %>
@@ -12,7 +13,7 @@
 <ul class="menu">
   <li><h2><%= link_to "resume", resume_path %></h2></li>
   <li><h2><%= link_to "blog", articles_path %></h2></li>
-  <li><h2><%= link_to fa_icon('twitter'), "https://twitter.com/casvanderhoven" %><%= link_to fa_icon('github'), "https://github.com/casvanderhoven" %> <%= link_to fa_icon('send'), "mailto:casvanderhoven@gmail.com"%></h2></li>
+  <li><h2><%= link_to fa_icon('twitter lg'), "https://twitter.com/casvanderhoven" %><%= link_to fa_icon('github lg'), "https://github.com/casvanderhoven" %> <%= link_to fa_icon('send lg'), "mailto:casvanderhoven@gmail.com"%></h2></li>
   <% if !signed_in? %>
     <li><h2><%= link_to "log in", sign_in_path %></h2></li>
   <% else %>
