@@ -1,5 +1,5 @@
 class UsersController < Clearance::UsersController
-  # before_filter :require_login, :authorize_admin, only: [:new, :create]
+  before_filter :require_login, :authorize_admin, only: [:new, :create]
 
   def new
     @user = user_from_params
