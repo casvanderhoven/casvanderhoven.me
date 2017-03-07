@@ -1,7 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :find_article, only: [:show, :edit, :update, :destroy]
   before_action :require_login, except: [:index, :show]
-  load_and_authorize_resource
 
   def index
     @articles = Article.all
