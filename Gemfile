@@ -68,3 +68,4 @@ gem 'neat'
 gem 'refills', group: [:development, :test]
 gem 'typedjs-rails'
 gem 'paperclip'
+gem 'cancan'
