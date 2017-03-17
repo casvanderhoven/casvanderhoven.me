@@ -15,7 +15,7 @@ class ProjectsController < ApplicationController
     
     if @project.save
       flash[:success] = "New project added"
-      redirect_to 'index'
+      redirect_to root_path
     else
       flash[:error] = "Something went wrong..."
       render 'new'

@@ -6,4 +6,7 @@ $(function(){
     showCursor: false,
     loop: true
   });
+  $('.block').click(function() {
+    $('.mobile-menu').slideToggle(200, "linear");
+  });
 });

@@ -1,12 +1,29 @@
 <header>
   <div class="logo">
-  <%= link_to root_path do %>
-    <h1>CAS VAN DER HOVEN</h1>
-<% end %>
-    <h2>DESIGNER, DEVELOPER AND FINANCE GRADUATE</h2>
+    <div class="blue-border">
+       
+    </div>
+    <%= link_to root_path do %>
+      <h1>CAS VAN DER HOVEN</h1>
+    <% end %>
+    <h2></h2>
   </div>
   <div class="header-text">
     <h1 class="typed">
     </h1>
   </div>
 </header>
+
+<div class="mobile-header">
+  <div class="block">
+    <%= fa_icon('bars') %>
+  </div>
+  <%= link_to root_path do %>
+    <h1>CAS VAN DER HOVEN</h1>
+  <% end %>
+  <ul class="mobile-menu">
+    <li><h2><%= link_to "resume", resume_path %></h2></li>
+    <li><h2><%= link_to "blog", articles_path %></h2></li>
+    <li><h2><%= link_to fa_icon('twitter'), "https://twitter.com/casvanderhoven" %><%= link_to fa_icon('github'), "https://github.com/casvanderhoven" %> <%= link_to fa_icon('send'), "mailto:casvanderhoven@gmail.com"%></h2></li>
+  </ul>
+</div>

@@ -13,8 +13,11 @@
 @import "tables";
 @import "typography";
 
-body {
-  margin: 20px auto;
-  width: 960px;
+@media only screen and (min-device-width : 960px) {
+  body {
+    margin: 20px auto;
+    width: 960px;
+    padding-left: 110px;
+  }
 }
 
