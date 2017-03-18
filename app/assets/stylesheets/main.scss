@@ -264,8 +264,10 @@ div.article-preview {
   span.tag-professional {
     background-color: $pink;
   }
-  p {
-    max-width: 50%;
+  @media only screen and (min-device-width : 481px) {
+    p {
+      max-width: 50%;
+    }
   }
 }
 
