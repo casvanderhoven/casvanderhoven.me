@@ -68,4 +68,5 @@ gem 'neat'
 gem 'refills', group: [:development, :test]
 gem 'typedjs-rails'
 gem 'paperclip'
+gem 'aws-sdk'
 gem 'cancan'
