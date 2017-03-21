@@ -240,6 +240,7 @@ div.article-personal {
     a {
       color: $yellow;
     }
+  }
 }
 div.article-professional {
   border-top: 8px solid $pink;
@@ -247,6 +248,7 @@ div.article-professional {
     a {
       color: $pink;
     }
+  }
 }
 div.article-preview {
   @include grid-column(12);
