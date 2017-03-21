@@ -4,6 +4,12 @@
     <h2 class="date"><%= article.created_at.strftime("%A, %B %e") %></h2>
     <%= link_to article do %>
       <h1 class="title"><%= article.title %></h1>
+      <% if signed_in? %>
+        <ul>
+          <li><%= link_to "edit article", edit_article_path %></li>
+          <li><%= link_to "destroy article", article_path, method: :destroy %></li>
+        </ul>
+      <% end %>
     <% end %>
     <span class="category tag-<%= article.category %>"><%= article.category %></span>
   </div>
