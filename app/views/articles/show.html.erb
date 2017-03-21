@@ -1,6 +1,6 @@
 <% provide(:title, "#{@article.title} | Cas van der Hoven") %>
 <div class="article-preview article-<%= @article.category %>">
-  <h2 class="date"><%= @article.created_at.strftime("%A, %B %e") %></h2>
+  <h2 class="date"><%= @article.created_at.strftime("%A, %B %e (%Y)") %></h2>
   <h1 class="title"><%= @article.title %></h1>
   <span class="category tag-<%= @article.category %>"><%= @article.category %></span>
   <p><%= markdown @article.content %></p>
