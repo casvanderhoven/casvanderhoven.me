@@ -228,12 +228,25 @@ h2.intro-text {
 /* articles#index and articles#show */
 div.article-programming {
   border-top: 8px solid $blue;
+  ul, ol, p {
+    a {
+      color: $blue;
+    }
+  }
 }
 div.article-personal {
   border-top: 8px solid $yellow;
+  ul, ol, p {
+    a {
+      color: $yellow;
+    }
 }
 div.article-professional {
   border-top: 8px solid $pink;
+  ul, ol, p {
+    a {
+      color: $pink;
+    }
 }
 div.article-preview {
   @include grid-column(12);
