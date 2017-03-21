@@ -7,7 +7,7 @@
       <% if signed_in? %>
         <ul>
           <li><%= link_to "edit article", edit_article_path(article) %></li>
-          <li><%= link_to "destroy article", article_path(article), method: :destroy %></li>
+          <li><%= link_to "destroy article", article_path(article), method: :delete, data: { confirm: "Are you sure?" } %></li>
         </ul>
       <% end %>
     <% end %>
