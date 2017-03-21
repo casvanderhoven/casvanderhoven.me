@@ -239,7 +239,7 @@ div.article-preview {
   @include grid-column(12);
   position: relative;
   margin-bottom: 20px;
-  ul {
+  ul, ol {
     list-style: initial;
   }
   a {
