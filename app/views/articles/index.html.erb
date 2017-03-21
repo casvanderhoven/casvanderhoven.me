@@ -1,15 +1,9 @@
 <% provide(:title, "Articles | Cas van der Hoven") %>
 <% @articles.each do |article| %>
   <div class="article-preview article-<%= article.category %>">
-    <h2 class="date"><%= article.created_at.strftime("%A, %B %e") %></h2>
+    <h2 class="date"><%= article.created_at.strftime("%A, %B %e (%Y)") %></h2>
     <%= link_to article do %>
       <h1 class="title"><%= article.title %></h1>
-      <% if signed_in? %>
-        <ul>
-          <li><%= link_to "edit article", edit_article_path(article) %></li>
-          <li><%= link_to "destroy article", article_path(article), method: :delete, data: { confirm: "Are you sure?" } %></li>
-        </ul>
-      <% end %>
     <% end %>
     <span class="category tag-<%= article.category %>"><%= article.category %></span>
   </div>
