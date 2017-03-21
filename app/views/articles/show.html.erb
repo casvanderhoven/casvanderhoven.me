@@ -4,6 +4,8 @@
   <h1 class="title"><%= @article.title %></h1>
   <span class="category tag-<%= @article.category %>"><%= @article.category %></span>
   <p><%= markdown @article.content %></p>
+  <%= render partial: 'disqus' %>
+
 </div>
 
 <ul class="menu">
