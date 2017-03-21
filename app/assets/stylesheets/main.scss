@@ -239,6 +239,9 @@ div.article-preview {
   @include grid-column(12);
   position: relative;
   margin-bottom: 20px;
+  ul {
+    list-style: initial;
+  }
   a {
     color: $black;
     &:hover {
