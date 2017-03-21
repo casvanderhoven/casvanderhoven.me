@@ -231,6 +231,11 @@ div.article-programming {
   ul, ol, p {
     a {
       color: $blue;
+      &:active,
+      &:focus,
+      &:hover {
+        color: shade($pink, 25%);
+      }
     }
   }
 }
@@ -239,6 +244,11 @@ div.article-personal {
   ul, ol, p {
     a {
       color: $yellow;
+      &:active,
+      &:focus,
+      &:hover {
+        color: shade($pink, 25%);
+      }
     }
   }
 }
@@ -247,6 +257,11 @@ div.article-professional {
   ul, ol, p {
     a {
       color: $pink;
+      &:active,
+      &:focus,
+      &:hover {
+        color: shade($pink, 25%);
+      }
     }
   }
 }
