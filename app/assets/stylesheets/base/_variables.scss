@@ -21,11 +21,13 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$black: #1C191A;
+$black: #000;
+$white: #fefefe;
 $yellow: #F9F945;
 $blue: #47BDE0;
 $pink: #D90F92;
-$color-set: $pink, $blue, $yellow;
+$green: #099959;
+$color-set: $pink, $blue, $yellow, $green;
 
 // Font Colors
 $base-font-color: $black;
